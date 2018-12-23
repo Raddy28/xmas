@@ -1,0 +1,127 @@
+/*   ----GENERAL----  */
+html {
+	box-sizing: border-box;  /* Width+padding+border sa zapocitava do sirky
+	Margin nie!!*/
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	color: #999999;
+	font-family: 'Mountains of Christmas', cursive;
+	font-size: 17px;
+	background: #f1f1f1;
+}
+
+/* ---- Clearfix ---- */
+
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+/* Header */
+.main-header{
+	color: #2f22ff;
+	background-color: #CF2021;
+	height: 80px;
+	border-bottom: 1px solid #ccc;
+}
+
+.main-header h1{
+	color: #f1f1f1;
+	font-size: 46px;
+	font-weight: 700;
+
+	margin-top: 0;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 10px;
+	word-spacing: 15px;
+}
+
+.main-header h1:before,
+.main-header h1:after{
+	content: " ~ ";
+}
+
+/* Post-header  */
+.post-header {
+	height: 300px;
+	background: url('../img/post-header.jpg') -500px -700px no-repeat;
+}
+
+/* Main */
+
+.buttonp{
+	text-align: center;
+	margin-top: 100px;
+	padding-top: 110px;
+}
+
+.button {
+	font-size: 36px;
+	color: #f1f1f1;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 10px 80px;
+	background: #CF2021;
+	border-radius: 10px;
+}
+
+.button:hover,
+.button:focus{
+	box-shadow: 3px 3px 4px #111;
+	text-shadow: 1px 1px 2px #111;
+}
+
+.post-content {
+	text-align: center;
+	margin-top: 300px;
+}
+
+.content-bg {
+	background-color: #222;
+	height: 110px;
+}
+
+#gift {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+	height: 40px;
+	background: #ccc;
+	border-top: 1px solid #999;
+}
+
+.post-footer {
+	display: block;
+}
