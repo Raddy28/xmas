@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+	<![endif]-->
+
+	<meta charset="utf-8">
+	<meta charset="iso-8859-2">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Vianočný darček</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("img").hide();
+  });
+    $("#hideb").click(function(){
+    $("button").hide();
+  });
+});
+</script>
+<!--<script>
+function myFunction() {
+  var x = document.getElementById("gift");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>-->
+
+<script>
+function myFunction() {
+  document.getElementById("gift").innerHTML = ;
+}
+
+function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+</script>
+
+</head>
+<body>
+
+	<header class="main-header">
+		<div class="container">
+			<h1>Veselé Vianoce</h1>
+		</div>
+	</header>
+
+	<main>
+		<article>
+			<header class="post-header">
+				<div class="container">
+					<p class="buttonp"><a href="#darcek" class="button">Chcem svoj gift!</a></p>
+				</div>
+			</header>
+
+			<div class="post-content">
+				<div class="content-bg">
+					<div class="container" id="darcek">
+						<img src="img/gift.png" alt="" class="gift">
+
+						<div id="welcomeDiv"  style="display:none;" class="answer_list" > WELCOME</div>
+<input type="button" name="answer" value="Show Div" onclick="showDiv()" />
+					</div>
+					<div class="hidebutton" id="hideb"><button id="hide" onclick="myFunction()">Otvor darček</button></div>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	<footer>
+		<div class="post-footer">
+		<div class="container">
+			<p class="left">Merry Christmas by Radoslav Smolen &copy All right reserved</p>
+		</div>
+		</div>
+	</footer>
+
+</body>
+</html>
